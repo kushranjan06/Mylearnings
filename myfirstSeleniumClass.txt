@@ -1,0 +1,53 @@
+package com.java.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Selenium_class {
+	
+	public static void main (String[] args){
+		
+		System.setProperty("webdriver.chrome.driver", "G:\\Selenium tutorial chennai\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://demoqa.com/");
+		
+/*// expansion for next statement in comment
+
+	By g= By.xpath(".//*[@id='lst-ib']"); //
+	WebElement w=driver.findElement(g);
+	w.sendKeys("selenium");*/
+	
+	//	driver.findElement(By.xpath(".//*[@id='lst-ib'] ")).sendKeys("selenium");
+	
+	// driver.manage().window().maximize();  shortcut for below 3 statements.
+	
+	Options  b=driver.manage();
+	Window c=b.window();
+	c.maximize();
+	
+	
+	driver.findElement(By.xpath(".//*[@id='menu-item-374']/a")).click();
+	
+	WebElement u=driver.findElement(By.xpath(".//*[@id='dropdown_7']"));
+	Select ob=new Select(u);
+	ob.selectByValue("india");
+	
+	/*Webelement e= driver.findElement(arg0)
+	
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 driver.close();*/  
+	}
+}
+
+
+  
