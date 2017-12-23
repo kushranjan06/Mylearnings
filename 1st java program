@@ -1,0 +1,10 @@
+Class myclass(){
+   
+   public static void main(String args[])
+   {
+   system.out.println("\n this is my first program");
+   
+   }
+   
+
+}
