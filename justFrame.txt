@@ -1,0 +1,37 @@
+driver.switchTo().Frame(Frame1);
+by g1=by.Xpath("xpath")
+webdriver g2=driver.findElement(g1);
+g2.click();
+
+driver.switchTo().defaultContent();
+
+driver.switchTo().Frame(Frame2);
+driver.switchTo().Frame(Frame3);
+
+by g3=by.Xpath("xpath")
+webdriver g4=driver.findElement(g3);
+g4.click();
+
+by g5=by.Xpath("xpath")
+webdriver g6=driver.findElement(g5);
+g6.click();
+
+driver.switchTo().defaultContent();
+by g7=by.Xpath("xpath")
+webdriver g8=driver.findElement(g7);
+g8.click();
+
+driver.switchTo().defaultContent();
+driver.switchTo().Frame(Frame2);
+driver.switchTo().Frame(Frame3);
+
+by g3=by.Xpath("xpath")
+webdriver g4=driver.findElement(g3);
+g4.click();
+
+driver.switchTo().Frame(Frame2);
+driver.switchTo().Frame(Frame3);
+driver.switchTo().Frame(Frame4);
+by h=by.Xpath("xpath")
+webdriver h1=driver.findElement(h);
+h1.click();
